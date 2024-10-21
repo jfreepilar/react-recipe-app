@@ -5,6 +5,8 @@ import {Link} from 'react-router-dom'
 import { FiSearch } from "react-icons/fi";
 import { IoIosClose } from "react-icons/io";
 import '../../index.css'
+import savorySpoon from '../../assets/savory-spoon.png'
+
 
 
   export default function HomePage() {
@@ -101,7 +103,7 @@ import '../../index.css'
                         max-xl:flex-col max-xl:items-center max-xl:h-[500px]
                         max-md:h-[500px]'>
 
-          <img src='src/assets/savory-spoon.png' className='h-56 w-96 mt-[-22px] ml-14 max-xl:h-50 max-xl:w-44' alt="Savory Sppon Logo"/>
+          <img src={savorySpoon} className='h-56 w-96 mt-[-22px] ml-14 max-xl:h-50 max-xl:w-44' alt="Savory Sppon Logo"/>
 
           <div className='h-24 my-5 p-5
                           max-xl:mt-[-50px] max-xl:ml-10'>
