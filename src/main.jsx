@@ -6,6 +6,8 @@ import { BrowserRouter} from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <BrowserRouter basename="/react-recipe-app/">
       <App />
+    </BrowserRouter>
   </StrictMode>
 )
