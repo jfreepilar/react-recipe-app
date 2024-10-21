@@ -100,10 +100,8 @@ import '../../index.css'
         <div className='flex mr-16 mb-6 h-72
                         max-xl:flex-col max-xl:items-center max-xl:h-[500px]
                         max-md:h-[500px]'>
-        {/* <div className={styles1.quoteMainContainer}> */}
 
-            <img src='src/assets/savory-spoon.png' className='h-56 w-96 mt-[-22px] ml-14
-                                                              max-xl:h-50 max-xl:w-44' alt="Savory Spoon Logo"/>
+          <img src='src/assets/savory-spoon.png' className='h-56 w-96 mt-[-22px] ml-14 max-xl:h-50 max-xl:w-44' alt="Savory Sppon Logo"/>
 
           <div className='h-24 my-5 p-5
                           max-xl:mt-[-50px] max-xl:ml-10'>

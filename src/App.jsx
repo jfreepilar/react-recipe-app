@@ -3,6 +3,7 @@ import HomePage from './components/HomePage/HomePage';
 import RecipeList from './components/RecipeList/RecipeList';
 import Footer from './components/Footer/Footer';
 import {Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const initialState = {
   userInput: '',
@@ -121,10 +122,12 @@ export default function App() {
   return (
     <>
     <globalContext.Provider value={{state, dispatch, showModal, hideModal}}>
-      <Routes>
-          <Route path='/' element={<HomePage />}/>
-          <Route path='/recipes/:category' element={<RecipeList/>}/>                                 
-      </Routes>
+      <Router basename='/Program%20Files/Git/react-recipe-app/'>
+        <Routes>
+            <Route path='/' element={<HomePage />}/>
+            <Route path='/recipes/:category' element={<RecipeList/>}/>                                 
+        </Routes>
+      </Router>
     </globalContext.Provider>
     <Footer/>
     </>
