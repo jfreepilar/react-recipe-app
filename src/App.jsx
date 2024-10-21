@@ -122,7 +122,7 @@ export default function App() {
   return (
     <>
     <globalContext.Provider value={{state, dispatch, showModal, hideModal}}>
-      <Router basename='/Program%20Files/Git/react-recipe-app/'>
+      <Router basename='/react-recipe-app/'>
         <Routes>
             <Route path='/' element={<HomePage />}/>
             <Route path='/recipes/:category' element={<RecipeList/>}/>                                 
